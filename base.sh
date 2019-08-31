@@ -65,7 +65,7 @@ mkdir /mnt/home
 mount /dev/sda4 /mnt/home 
 
 echo 'Выбор зеркал для загрузки'
-echo "Server = http://archlinux.ip-connect.vn.ua/$repo/os/$arch" > /etc/pacman.d/mirrorlist 
+echo "Server = http://mirrors.nix.org.ua/linux/archlinux/$repo/os/$arch" > /etc/pacman.d/mirrorlist 
 
 echo 'Установка базовой системы'
 
