@@ -64,8 +64,7 @@ mkfs.ext4 /dev/sda4
 mkdir /mnt/home
 mount /dev/sda4 /mnt/home 
 
-echo 'Выбор зеркал для загрузки'
-echo "Server = http://mirrors.nix.org.ua/linux/archlinux/$repo/os/$arch" > /etc/pacman.d/mirrorlist 
+
 
 echo 'Установка базовой системы'
 
