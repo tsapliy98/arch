@@ -1,4 +1,4 @@
- #!/bin/bash 
+#!/bin/bash 
 
 read -p "Введите имя компьютера: " hostname
 read -p "Введите имя пользователя: " username 
@@ -55,12 +55,12 @@ echo 'Include = /etc/pacman.d/mirrorlist' >> /etc/pacman.conf
 pacman -Syy 
 
 echo 'Ставим иксы'
-pacman -S xorg xorg-xinit i3-wm  --noconfirm 
+pacman -S xorg xorg-xinit i3-wm 
 
 echo 'Ставим шрифты'
 pacman -S ttf-liberation ttf-dejavu --noconfirm 
 
 echo 'Ставим сеть'
-pacman -S networkmanager --noconfirm 
+pacman -S networkmanager 
 
 systemctl enable NetworkManager
